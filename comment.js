@@ -68,12 +68,3 @@ router.get("/:commentId", auth, async (req, res) => {
 // @route   PUT comment/:commentId
 // @desc    Update a comment
 // @access  Private
-router.put("/:commentId", auth, async (req, res) => {
-  try {
-    const { comment } = req.body;
-
-    //Validation
-    if (!comment) {
-      return res.status(400).json({ msg: "Not all fields havevar express = require('express');
-var app = express();
-
